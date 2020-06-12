@@ -31,11 +31,10 @@ bool Pieza::movimientos(int fil, int col){
 	return false;
 }
 
-Pieza::Pieza(int f, int c, Pieza*** t, bool j){
+Pieza::Pieza(int f, int c, Pieza*** t){
 	this->fila=f;
 	this->columna=c;
 	this->tablero=t;
-	this->jugador=j;
 }
 Pieza::~Pieza()
 {

@@ -6,7 +6,8 @@
 class Ministro : public Pieza
 {
 	public:
-		Ministro();
+		Ministro(int , int , Pieza*** , char );
+		bool validacion(int, int);
 		~Ministro();
 	protected:
 };

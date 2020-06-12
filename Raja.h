@@ -6,7 +6,8 @@
 class Raja : public Pieza
 {
 	public:
-		Raja();
+		Raja(int , int , Pieza*** , char );
+		bool validacion(int, int);
 		~Raja();
 	protected:
 };
