@@ -5,7 +5,7 @@ class Elefante : public Pieza
 {
 	public:
 		Elefante(int , int , Pieza*** , char );
-		bool validacion(int, int);
+		bool validacion(int, int, Pieza***);
 		~Elefante();
 	protected:
 };

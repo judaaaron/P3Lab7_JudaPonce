@@ -3,17 +3,39 @@
 Chaturanga::Chaturanga()
 {
 }
+void Chaturanga::jugar(){
+
+	llenarTablero();
+	printTablero();
+	int estoy1,estoy2, voy1, voy2;
+	cout<<"Ingrese coordenadas jugador 1 (Piezas blancas): "<<endl;
+	
+}
+void Chaturanga::printTablero(){
+	cout<<"   A  B  C  D  E  F  G  H  "<<endl;
+	cout<<"___________________________"<<endl;
+	for(int i=0;i<this->size;i++){
+		cout<<i<<" ";
+		for(int j=0;j<this->size;j++){
+			cout<<" ";
+			cout<<tablero[i][j]->getChar();
+			cout<<" ";
+		}
+		cout<<endl;
+	}
+	cout<<"___________________________"<<endl;
+}
 
 void Chaturanga::llenarTablero(){
-	size=8;
-	tablero = new Pieza**[size];
+
+	tablero = new Pieza**[this->size];
 	
-	for(int i = 0;i<size;i++){
-		tablero[i] = new Pieza*[size];
+	for(int i = 0;i<this->size;i++){
+		tablero[i] = new Pieza*[this->size];
 	}
 	///instanciar size x size Piezas
-	for(int i=0;i<size;i++){
-		for(int j=0;j<size;j++){
+	for(int i=0;i<this->size;i++){
+		for(int j=0;j<this->size;j++){
 			if(i<2){
 				if(i==0){
 					if(j==0 || j==7){
@@ -71,20 +93,7 @@ void Chaturanga::llenarTablero(){
 	
 }
 
-void Chaturanga::printTablero(){
-	cout<<"   A  B  C  D  E  F  G  H  "<<endl;
-	cout<<"___________________________"<<endl;
-	for(int i=0;i<size;i++){
-		cout<<i<<" ";
-		for(int j=0;j<size;j++){
-			cout<<" ";
-			cout<<tablero[i][j]->getChar();
-			cout<<" ";
-		}
-		cout<<endl;
-	}
-	cout<<"____________________________"<<endl;
-}
+
 
 Chaturanga::~Chaturanga()
 {

@@ -6,9 +6,8 @@
 #include"Elefante.h"
 #include"Ministro.h"
 #include"Raja.h"
-
 #include<iostream>
-
+#include<string.h>
 using std::cout;
 using std::endl;
 
@@ -22,7 +21,7 @@ class Chaturanga
 		~Chaturanga();
 	protected:
 		Pieza*** tablero;
-		int size;
+		int size=8;
 };
 
 #endif

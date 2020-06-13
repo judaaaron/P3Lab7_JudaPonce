@@ -7,7 +7,7 @@ class Raja : public Pieza
 {
 	public:
 		Raja(int , int , Pieza*** , char );
-		bool validacion(int, int);
+		bool validacion(int, int, Pieza***);
 		~Raja();
 	protected:
 };

@@ -7,7 +7,7 @@ class Torre : public Pieza
 {
 	public:
 		Torre(int, int, Pieza***, char);
-		bool validacion(int, int);
+		bool validacion(int, int, Pieza***);
 		~Torre();
 	protected:
 };

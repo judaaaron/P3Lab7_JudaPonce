@@ -11,13 +11,12 @@ class Pieza
 		bool getJugador();
 		bool movimientos(int,int);
 		bool adentro(int,int);
-		virtual bool validacion(int fil, int colu)=0;
+		virtual bool validacion(int fil, int colu, Pieza***)=0;
 		~Pieza();
 	protected:
 		Pieza*** tablero;
 		int fila,columna;
 		char caracter;
-		bool jugador;
 		
 		
 };
