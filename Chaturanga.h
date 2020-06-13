@@ -1,15 +1,15 @@
 #ifndef CHATURANGA_H
 #define CHATURANGA_H
+#include <iostream>
+#include<string>
 #include"Infanteria.h"
 #include"Torre.h"
 #include"Caballo.h"
 #include"Elefante.h"
 #include"Ministro.h"
 #include"Raja.h"
-#include<iostream>
-#include<string.h>
-using std::cout;
-using std::endl;
+
+using namespace std;
 
 class Chaturanga
 {
